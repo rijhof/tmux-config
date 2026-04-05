@@ -11,12 +11,14 @@ My personal tmux configuration with Catppuccin Mocha theme.
 - Heavy pane borders
 - Mouse support enabled
 - [tmux-sessionx](https://github.com/omerxx/tmux-sessionx) for session management
+- [tmux-browser](https://github.com/ofirgall/tmux-browser) for browser sessions attached to tmux
 
 ## Requirements
 
 - tmux 3.2+ (for heavy borders and popup styling)
 - macOS (scripts use `top` and `sysctl` for system info)
 - [TPM](https://github.com/tmux-plugins/tpm) (Tmux Plugin Manager)
+- [brotab](https://github.com/balta2ar/brotab) (for tmux-browser)
 
 ## Installation
 
@@ -52,4 +54,6 @@ Then start tmux and press `prefix + I` to install plugins.
 
 Managed via TPM:
 - [tpm](https://github.com/tmux-plugins/tpm) - Plugin manager
+- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - Session persistence
 - [tmux-sessionx](https://github.com/omerxx/tmux-sessionx) - Session picker
+- [tmux-browser](https://github.com/ofirgall/tmux-browser) - Browser sessions per tmux session
