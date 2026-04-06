@@ -60,7 +60,7 @@ Managed via TPM:
 
 ## Cheatsheet
 
-> Prefix = `Ctrl + b` (default)
+> Prefix = `Ctrl + a`
 
 ### Sessions
 
