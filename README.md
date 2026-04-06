@@ -57,3 +57,83 @@ Managed via TPM:
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - Session persistence
 - [tmux-sessionx](https://github.com/omerxx/tmux-sessionx) - Session picker
 - [tmux-browser](https://github.com/ofirgall/tmux-browser) - Browser sessions per tmux session
+
+## Cheatsheet
+
+> Prefix = `Ctrl + b` (default)
+
+### Sessions
+
+| Shortcut | Beschreibung |
+|----------|--------------|
+| `prefix + o` | Session-Picker (sessionx) |
+| `prefix + d` | Session detachen |
+| `prefix + s` | Sessions auflisten |
+| `prefix + $` | Session umbenennen |
+| `prefix + (` | Vorherige Session |
+| `prefix + )` | Nächste Session |
+
+### Windows
+
+| Shortcut | Beschreibung |
+|----------|--------------|
+| `prefix + c` | Neues Fenster |
+| `prefix + ,` | Fenster umbenennen |
+| `prefix + &` | Fenster schließen |
+| `prefix + n` | Nächstes Fenster |
+| `prefix + p` | Vorheriges Fenster |
+| `prefix + 1-9` | Zu Fenster 1-9 wechseln |
+| `prefix + w` | Fenster-Übersicht |
+
+### Panes
+
+| Shortcut | Beschreibung |
+|----------|--------------|
+| `prefix + %` | Vertikal splitten |
+| `prefix + "` | Horizontal splitten |
+| `prefix + x` | Pane schließen |
+| `prefix + o` | Zwischen Panes wechseln |
+| `prefix + q` | Pane-Nummern anzeigen |
+| `prefix + z` | Pane zoomen/unzoomen |
+| `prefix + {` | Pane nach links |
+| `prefix + }` | Pane nach rechts |
+| `prefix + Pfeiltasten` | Pane-Größe ändern |
+
+### Copy Mode
+
+| Shortcut | Beschreibung |
+|----------|--------------|
+| `prefix + [` | Copy Mode starten |
+| `q` | Copy Mode beenden |
+| `Space` | Auswahl starten |
+| `Enter` | Auswahl kopieren |
+| `/` | Vorwärts suchen |
+| `?` | Rückwärts suchen |
+| `n` | Nächster Treffer |
+
+### Plugins
+
+| Shortcut | Beschreibung |
+|----------|--------------|
+| `prefix + I` | Plugins installieren (TPM) |
+| `prefix + U` | Plugins updaten (TPM) |
+| `prefix + Ctrl-s` | Session speichern (resurrect) |
+| `prefix + Ctrl-r` | Session wiederherstellen (resurrect) |
+
+### Custom (diese Config)
+
+| Shortcut | Beschreibung |
+|----------|--------------|
+| `prefix + r` | Config neu laden |
+| `prefix + o` | Sessionx öffnen |
+
+### Nützliche Befehle
+
+```bash
+tmux                     # Neue Session starten
+tmux new -s name         # Session mit Namen starten
+tmux ls                  # Sessions auflisten
+tmux a                   # Letzte Session attachen
+tmux a -t name           # Bestimmte Session attachen
+tmux kill-session -t name  # Session beenden
+```
